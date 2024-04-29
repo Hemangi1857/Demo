@@ -1,0 +1,31 @@
+<!-- Write JavaScript program for convert Km. to Miles. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Km. to Miles</title>
+    <script>
+      function km2mile() {
+        var x = document.getElementById("km").value;
+        var res = x * 0.621371;
+        document.getElementById("mile").value = res;
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h1>Conversion of Kilometer to Miles</h1>
+      <font size="5">
+        <br />
+        Enter Kilometer(s) : <input type="text" id="km" name="txtkm" />
+        <br />
+        <br />
+        <button type="button" onclick="km2mile()">KM to Miles</button>
+        <br />
+        <br />
+        Kilometer to Miles :
+        <input type="text" id="mile" name="txtmile" disabled />
+      </font>
+    </center>
+  </body>
+</html>
